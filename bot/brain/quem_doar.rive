@@ -1,7 +1,7 @@
 > topic quem_doar
     + inicio
     - Cada pessoa tem um tipo sanguíneo, existem 8 tipos de sangues, sendo: A+, A-, B+, B-, O+, O-, AB+ e AB-.\n
-    ^ De acordo com seu registro, seu tipo sanguíneo é: <call>mostrarEsf <get esf></call> \n\n
+    ^ De acordo com seu registro, seu tipo sanguíneo é: <get esf>\n\n
     ^ O tipo sanguíneo A+ pode doar para A+ e AB+, e pode receber doação de A+, A-, O+, O-\n
     ^ O tipo sanguíneo A- pode doar para A+, A-, AB+ e AB-, e pode receber doação de A- e O-\n
     ^ O tipo sanguíneo B+ pode doar para B+ e AB+, e pode receber doação de B+ e AB+\n
