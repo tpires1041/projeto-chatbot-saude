@@ -1,25 +1,29 @@
 > topic boas_vindas
     + inicio
-    - Olá, sou a bot <bot nome> 👩🏻, espero lhe encontrar bem 😁. Digite o que deseja fazer?\n\n
-    ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
-    ^ 1 - Agendar exame\n
-    ^ 2 - Consulta do exame marcado\n
-    ^ 3 - Informações sobre o câncer de colo do útero\n
-    ^ 4 - Finalizar atendimento
-   
+    - Olá, sou o bot <bot nome> , espero que esteja tudo bem com você!. Digite o que deseja fazer?\n\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Desejo doar sangue\n
+    ^ 2 - O que é necessário para doar?\n
+    ^ 3 - Onde eu posso realizar doações?\n
+    ^ 4 - Desejo falar com a IA\n
+    ^ 5 - Finalizar Atendimento
+
     + 1
-    - {topic=agendamento_horario}{@inicio}
+    - Que ótimo que deseja doar sangue!\n\n
+    ^ {topic=desejo_doar}{@inicio}
  
     + 2
-    - Seu exame está marcado para o seguinte horário:\n 
-    ^ <call>mostrarDataExamePaciente</call>\n 
-    ^ {topic=menu_inicial}{@inicio} 
+    - {topic=requisitos_doar}{@inicio}
 
     + 3
-    - {topic=informacoes}{@inicio}
-
+    - {topic=locais_doar}{@inicio}
+  
     + 4
-    - Okay, até a próxima {topic=random}
+    - Vai ter que esperar um pouco amigo, sou a POC ainda :D\n\n
+    ^ {topic=boas_vindas}{@inicio}
+ 
+    + 5
+    - Certo, até a próxima! {topic=random}
 
     + *
     - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.

@@ -1,8 +1,8 @@
 // Cadastro paciente
 > topic cadastro
     + inicio
-    - Olá, sou o bot <bot nome> , espero que você esteja bem! Verifiquei aqui e você ainda não possui cadastro em nosso sistema... \n\n 
-    ^ Deseja se cadastrar? É super rápido e são informações basicas! Para sua resposta, digite apenas números, cada número representa uma resposta. \n\n
+    - Olá, sou a bot <bot nome> 👩🏻, espero lhe encontrar bem. Verifiquei que você ainda não possui cadastro. \n\n 
+    ^ Deseja se cadastrar? É rapidinho 😁!! Para sua resposta, digite apenas números, cada número representa uma respectiva resposta. \n\n
     ^ 1 - Sim \n
     ^ 2 - Não \n 
 
@@ -20,7 +20,7 @@
 > topic inserir_nome
     + inicio
     - Que maravilha, vamos começar com seus dados. \n\n 
-    ^ Digite seu nome completo, ou como deseja ser chamado(a):
+    ^ Digite seu nome completo, ou como deseja ser chamada:
     ^ {topic=inserir_nome}{topic=setnome}
     
     > topic setnome
@@ -30,17 +30,17 @@
 
     > topic checar_nome
         + inicio
-        - O nome está correto? "<get nome>" \n\n
+        - O nome está correto? <get nome> \n\n
         ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
         ^ 1 - Sim \n
         ^ 2 - Não \n
 
         + 1
-        - Prazer <get nome>! \n\n 
+        - Prazer em lhe conhecer, <get nome>! \n\n 
         ^ {topic=inserir_esf}{@inicio}
 
         + 2
-        - Está tudo bem, digite novamente o seu nome completo ou como você gostaria de ser chamado(a). {topic=inserir_nome}{topic=setnome}
+        - Está tudo bem, digite novamente o seu nome completo ou como você gostaria de ser chamada. {topic=inserir_nome}{topic=setnome}
 
         + *
         - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n
@@ -50,7 +50,7 @@
 
 > topic inserir_cpf
     + inicio
-    - Agora por favor digite seu CPF apenas com números. 
+    - Agora por favor, digite, com apenas números, seu cpf. 
     ^ {topic=inserir_cpf}{topic=setcpf}
 
     > topic setcpf
@@ -58,13 +58,13 @@
         - <set cpf=<star>> {topic=inserir_cpf}{topic=checar_cpf}{@inicio}
 
         + *
-        - Seu CPF contém erros ou não é válido, vamos tentar novamente...\n 
+        - Seu cpf contém alguns erros ou não é válido 🙁, vamos tentar novamente.\n 
         ^ {topic=inserir_cpf}{@inicio}
     < topic
 
     > topic checar_cpf
         + inicio
-        - O CPF está correto? "<get cpf>" \n\n
+        - O CPF está correto? <get cpf> \n\n
         ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
         ^ 1 - Sim \n
         ^ 2 - Não \n
@@ -75,27 +75,27 @@
         * <call>checarCPF <get cpf></call> == false => {topic=inserir_cpf}{topic=checar_cpf}{@*}
         
         + 2
-        - Digite novamente seu CPF apenas com números. {topic=inserir_cpf}{topic=setcpf}
+        - Digite novamente, com apenas números, seu cpf. {topic=inserir_cpf}{topic=setcpf}
 
         + *
-        - Seu CPF contém alguns erros ou não é válido, vamos tentar novamente... {topic=inserir_cpf}{@inicio}
+        - Seu cpf contém alguns erros ou não é válido 🙁, vamos tentar novamente. {topic=inserir_cpf}{@inicio}
     < topic
 < topic
 
 > topic checar_cadastro
     + inicio
-    - Checando se o CPF existe, por favor aguarde...
+    - Checando se o CPF existe...
     * <call>checarCadastroPacientePorCPF <get cpf></call> == true => {topic=checar_cadastro}{@mensagem}
     * <call>checarCadastroPacientePorCPF <get cpf></call> == false => {topic=inserir_nome}{@inicio}
 
     + mensagem
-    - Verifiquei que você já possuia um cadastro. Então, atualizamos ele com sua nova identidade! \n\n
+    - Verifiquei que você já possuia um cadastro. Então, atualizamos ele com sua nova identidade. \n\n
     ^ {topic=boas_vindas}{@inicio}
 < topic
 
 > topic inserir_esf
     + inicio
-    - Maravilha <get nome>. Agora, selecione seu tipo sanguíneo. Será importante essa informação, pois em caso de calamidade podemos fazer solitações para algumas pessoas doarem sangue. \n\n
+    - Maravilha <get nome>. Agora, selecione seu ESF, também conhecido como posto de saúde do seu bairro 😁. \n\n
     ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
     ^ <call>listarEsfs</call>
     ^ {topic=inserir_esf}{topic=setesf}
@@ -105,19 +105,19 @@
         - <set esf=<star>> {topic=inserir_esf}{topic=checar_esf}{@inicio}
 
         + *
-        - Ocorreu um erro, vamos tentar novamente...\n 
+        - Ocorreu um erro 🙁, vamos tentar novamente.\n 
         ^ {topic=inserir_esf}{@inicio}
     < topic
 
     > topic checar_esf
         + inicio
-        - O tipo sanguíneo está correto? <call>mostrarEsf <get esf></call> \n\n
+        - O Esf está correto? <call>mostrarEsf <get esf></call> \n\n
         ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
         ^ 1 - Sim \n
         ^ 2 - Não \n 
 
         + 1
-        - Ok, estamos quase acabando...\n{topic=inserir_contato}{@inicio}
+        - Ok, estamos quase no final.\n{topic=inserir_contato}{@inicio}
 
         + 2
         - {topic=inserir_esf}{@inicio}
@@ -133,20 +133,20 @@
 - <set contato=<star>> {topic=inserir_contato}{topic=checar_contato}{@inicio}
 
 + *
-- Seu telefone para contato contém erros ou não é válido, vamos tentar novamente...\n 
+- Seu telefone para contato contém alguns erros ou não é válido 🙁, vamos tentar novamente.\n 
 ^ {topic=inserir_contato}{@inicio}
 
 < topic
 
 > topic checar_contato
  + inicio
- - O telefone está correto? "<get contato>" \n\n
+ - O telefone está correto? <get contato> \n\n
  ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
  ^ 1 - Sim \n
  ^ 2 - Não \n
 
  + 1
- - Perfeito, estou salvando seu dados, só um minutinho...\n\n\n
+ - Perfeito, estou salvando seu dados, só um minutinho.\n
  ^ <call>salvarCadastroPaciente "<get nome>" "<get cpf>" <get esf> "<get contato>"</call> 
  ^ {topic=boas_vindas}{@inicio}
 

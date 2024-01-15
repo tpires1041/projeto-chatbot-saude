@@ -1,0 +1,27 @@
+> topic requisitos_doar
+    + inicio
+    - Para realizar a doação de sangue são obrigatórios:\n\n
+    ^ Apresentar documento oficial com foto;\n
+    ^ Estar em boas condições de saúde, não estar gripado ou com outra infecção;\n
+    ^ Ter entre 16 e 69 anos de idade;\n
+    ^ O limite de idade para a primeira doação é de 60 anos, 11 meses e 29 dias;\n
+    ^ Menores entre 16 e 17 anos de idade podem doar com acompanhamento e autorização do responsável legal;\n
+    ^ Pesar no mínimo 51 kg.\n\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
+    ^ 1 - Intevalo de doações\n
+    ^ 2 - Locais de doações\n
+    ^ 3 - Finalizar
+
+    + 1
+    - {topic=desejo_doar}{@inicio}
+
+    + 2
+    - {topic=locais_doar}{@inicio}
+
+    + 3
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.
+    ^ {topic=requisitos_doar}{@inicio}
+< topic

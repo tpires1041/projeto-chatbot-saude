@@ -1,0 +1,97 @@
+// Funções para ESF
+> object listarEsfs javascript
+    return this.listarEsfs();
+< object
+
+> object mostrarEsf javascript
+    return this.buscarEsf(args[0]);
+< object
+
+//Funções para o agendamento
+> object mostrarDia javascript
+    //var data = this.getEsfs();
+    if (args[0] == '1'){
+        return "Segunda-feira"
+    }else if(args[0] == '2'){
+        return "Terça-feira"
+    }else if(args[0] == '3'){
+        return "Quarta-feira"
+    }else if(args[0] == '4'){
+        return "Quinta-feira"
+    }else if(args[0] == '5'){
+        return "Sexta-feira"
+    }
+< object
+
+> object mostrarHorario javascript
+    //var data = this.getEsfs();
+    if (args[0] == '1'){
+        return "7h às 8h"
+    }else if (args[0] == '2'){
+        return "8h às 9h"
+    }else if (args[0] == '3'){
+        return "9h às 10h"
+    }else if (args[0] == '4'){
+        return "10h às 11h"
+    }else if (args[0] == '5'){
+        return "13h às 14h"
+    }else if (args[0] == '6'){
+        return "14h às 15h"
+    }else if (args[0] == '7'){
+        return "15h às 16h"
+    }else if (args[0] == '8'){
+        return "16h às 17h"
+    }
+< object
+
+> object salvarAgendamentoPrevio javascript
+    if (this.salvarAgendamentoPrevio(args)){
+        return "Sucesso 👍🏼 👍🏼 😁 😁\n"
+    } else {
+        return "Erro ao realizar agendamento\n"
+    }
+< object
+
+// Funcões para Paciente
+> object mostrarDataExamePaciente javascript
+    var data = this.mostrarDataExamePaciente();
+    return data;
+< object
+
+> object salvarCadastroPaciente javascript
+    if (this.salvarCadastroPaciente(args)){
+        return "Sucesso 👍🏼 👍🏼 😁 😁\n"
+    } else {
+        return "Erro ao realizar cadastro\n"
+    }
+< object
+
+> object verificarCadastroPaciente javascript
+    return this.verificarCadastroPaciente();
+< object
+
+> object checarCadastroPacientePorCPF javascript
+    return this.checarCadastroPacientePorCPF(args[0])
+< object
+
+> object checarCPF javascript
+    return this.checarCPF(args[0]);
+< object
+
+// Funções para Informações
+> object listarInformacoes javascript
+    return this.listarInformacoes();
+< object
+
+> object mostrarInformacao javascript
+    return this.buscarInformacao(args[0]);
+< object
+
+//Funções para salvar avaliação
+> object salvarAvaliacao javascript
+    if (this.salvarAvaliacao(args)){
+        return "Sucesso 👍🏼 👍🏼 😁 😁\n"
+    } else {
+        return "Erro ao salvar a avaliação\n"
+    }
+< object
