@@ -10,13 +10,13 @@ const resources = [
   },
   { resource: Usuario, 
     options: { 
-      listProperties: ['id', 'name', 'email', 'sangue', 'admin', 'createdAt', 'updatedAt']
+      listProperties: ['id', 'name', 'email', 'esfId', 'admin', 'createdAt', 'updatedAt']
     }
   },
   { resource: Paciente, 
     options: { 
-      showProperties: ['id', 'name', 'contato', 'sangue', 'createdAt', 'updatedAt'],
-      listProperties: ['id', 'name', 'contato', 'sangue', 'createdAt', 'updatedAt']
+      showProperties: ['id', 'name', 'contato', 'esfId', 'createdAt', 'updatedAt'],
+      listProperties: ['id', 'name', 'contato', 'esfId', 'createdAt', 'updatedAt']
     }
   }, 
   /*{ resource: Agendamento, 
