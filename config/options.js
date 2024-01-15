@@ -19,7 +19,7 @@ const resources = [
       listProperties: ['id', 'name', 'contato', 'esfId', 'createdAt', 'updatedAt']
     }
   }, 
-  { resource: Agendamento, 
+  /*{ resource: Agendamento, 
     options: {
       listProperties: ['id', 'pacienteId', 'data_agendamento', 'dia_previsto', 'horario_previsto', 'status', 'createdAt', 'updatedAt'],
       // properties: {
@@ -34,7 +34,7 @@ const resources = [
       //parent: { name: 'id' },
       //sort: { direction: 'desc' },
     }
-  },
+  },*/
   { resource: Informacao, 
     options: {
       listProperties: ['id', 'tipo', 'conteudo', 'fonte', 'createdAt', 'updatedAt'],
