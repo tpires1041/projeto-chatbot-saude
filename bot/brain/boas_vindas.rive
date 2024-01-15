@@ -5,8 +5,9 @@
     ^ 1 - Desejo doar sangue\n
     ^ 2 - O que é necessário para doar?\n
     ^ 3 - Onde eu posso realizar doações?\n
-    ^ 4 - Desejo falar com a IA\n
-    ^ 5 - Finalizar Atendimento
+    ^ 4 - Para quem eu posso doar?\n
+    ^ 5 - Desejo falar com a IA\n
+    ^ 6 - Finalizar Atendimento
 
     + 1
     - Que ótimo que deseja doar sangue!\n\n
@@ -19,10 +20,13 @@
     - {topic=locais_doar}{@inicio}
   
     + 4
+    - {topic=quem_doar}{@inicio}
+
+    + 5
     - Vai ter que esperar um pouco amigo, sou a POC ainda :D\n\n
     ^ {topic=boas_vindas}{@inicio}
  
-    + 5
+    + 6
     - Certo, até a próxima! {topic=random}
 
     + *

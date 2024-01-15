@@ -4,7 +4,8 @@
     ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n 
     ^ 1 - Voltar ao menu anterior\n
     ^ 2 - Voltar ao menu inícial\n
-    ^ 3 - Finalizar atendimento
+    ^ 3 - F\n
+    ^ 4 - Finalizar atendimento
 
     + 1
     - {topic=informacoes}{@inicio}

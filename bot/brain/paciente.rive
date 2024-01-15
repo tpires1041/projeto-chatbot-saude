@@ -13,7 +13,7 @@
     - Que pena. Nos vemos em outra oportunidade {topic=random}. \n\n 
 
     + *
-    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
     ^ {topic=cadastro}{@inicio}
 < topic
 
@@ -43,7 +43,7 @@
         - Está tudo bem, digite novamente o seu nome completo ou como você gostaria de ser chamado(a). {topic=inserir_nome}{topic=setnome}
 
         + *
-        - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n
+        - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
         ^ {topic=inserir_nome}{topic=checar_nome}{@inicio}
     < topic
 < topic
