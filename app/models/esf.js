@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   
-  const table_name = 'esfs';
+  const table_name = 'sangues';
   const model_name = 'Esf';
 
   const Esf = sequelize.define(table_name, {
