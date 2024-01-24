@@ -6,8 +6,9 @@
     ^ 2 - O que é necessário para doar?\n
     ^ 3 - Onde eu posso realizar doações?\n
     ^ 4 - Para quem eu posso doar?\n
-    ^ 5 - Desejo falar com a IA\n
-    ^ 6 - Finalizar Atendimento
+    ^ 5 - Mais sobre o <bot nome>
+    ^ 6 - Desejo falar com a IA\n
+    ^ 7 - Finalizar Atendimento
 
     + 1
     - Que ótimo que deseja doar sangue!\n\n
@@ -21,15 +22,18 @@
   
     + 4
     - {topic=quem_doar}{@inicio}
-
+    
     + 5
+    - {topic=info_bot}{@inicio}
+
+    + 6
     - Vai ter que esperar um pouco amigo, sou a POC ainda :D\n\n
     ^ {topic=boas_vindas}{@inicio}
  
-    + 6
+    + 7
     - Certo, até a próxima! {topic=random}
 
     + *
-    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
     ^ {topic=boas_vindas}{@inicio}
 < topic
