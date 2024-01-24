@@ -1,0 +1,21 @@
+> topic info_bot
+    + inicio
+    - Sobre min:\n\n
+    ^ Sou o <bot nome> , fui criado em um projeto para auxiliar e aumentar a doação de sangue dando acesso a informações sobre como, onde e sobre doar sangue.\n
+    ^ Fui desenvolvido pelos estudantes João Pedro Picolo e Tiago Pires que foram orientados pelo professor Fábio Oliveira do Instituto Federal do Mato Grosso do Sul de Nova Andradina.\n
+    ^ Além de ser um chatbot também tenho uma Inteligência Artificial em min!\n\n
+    ^ Digite o que deseja fazer?\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu\n
+    ^ 2 - Finalizar
+
+    + 1
+    - {topic=boas_vindas}{@inicio}
+ 
+    + 2
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
+    ^ {topic=info_bot}{@inicio}
+< topic
