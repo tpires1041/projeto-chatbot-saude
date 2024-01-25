@@ -1,5 +1,6 @@
 require('dotenv/config');
 
+import { ComponentLoader } from 'adminjs'
 const AdminJS = require('adminjs');
 const AdminJSExpress = require('@adminjs/express');
 const AdminJSSequelize = require('@adminjs/sequelize')
@@ -7,6 +8,20 @@ const options = require('./config/options.js');
 AdminJS.registerAdapter(AdminJSSequelize);
 const { Usuario } = require('./app/models');
 const bcrypt = require('bcryptjs');
+const componentLoader = new ComponentLoader()
+
+const Components = {
+  Dashboard: componentLoader.add('Dashboard', './dashboard'),
+  // other custom components
+}
+
+const options = {
+  dashboard: {
+    component: Components.Dashboard,
+  },
+  componentLoader
+}
+
 
 const adminJs = new AdminJS(options)
 
