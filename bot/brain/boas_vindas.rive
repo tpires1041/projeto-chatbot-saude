@@ -1,6 +1,6 @@
 > topic boas_vindas
     + inicio
-    - Olá <get nome>, sou o bot <bot nome> , espero que esteja tudo bem com você!. Digite o que deseja fazer?\n\n
+    - Olá, sou o bot <bot nome> , espero que esteja tudo bem com você!. Digite o que deseja fazer?\n\n
     ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
     ^ 1 - Desejo doar sangue\n
     ^ 2 - O que é necessário para doar?\n
