@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   
-    const table_name = 'pacientes';
+    const table_name = 'registros';
     const model_name = 'Paciente';
   
     const Paciente = sequelize.define(table_name, {
