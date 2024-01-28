@@ -7,7 +7,7 @@
     ^ Digite o que deseja fazer?\n
     ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
     ^ 1 - Voltar ao menu\n
-    ^ 2 - Finalizar
+    ^ 2 - Finalizar Atendimento
 
     + 1
     - {topic=boas_vindas}{@inicio}
