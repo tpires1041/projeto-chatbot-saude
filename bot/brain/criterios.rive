@@ -1,0 +1,43 @@
+> topic criterios_basicos
+    + inicio
+    - Para doar sangue existem critérios que devem ser seguidos para poder doar sangue e impedir controvérsias.\n\n
+    ^ Aqui estão alguns critério básicos e outras informações para ter uma boa realização de doação de sangue:\n\n
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - O que é necessário para doar sangue?\n
+    ^ 2 - Quem não pode doar sangue?\n
+    ^ 3 - Tem algo que eu fiz que devo aguardar para doar?\n
+    ^ 4 - Após alguma vacina, eu tenho que aguardar?\n
+    ^ 5 - Intervalos entre doações\n
+    ^ 6 - Existem recomendações?\n
+    ^ 7 - Sobre os tipos de sangues\n
+    ^ 8 - Finalizar Atendimento
+
+    + 1 
+    - {topic=requisitos_doar}{@inicio}
+
+    + 2
+    - {topic=impedimentos}{@inicio}
+
+    + 3
+    - {topic=aguardar_apos}{@inicio}
+
+    + 4
+    - {topic=intervalo_vacinas}{@inicio}
+
+    + 5
+    - {topic=intervalo_doacao}{@inicio}
+
+    + 6
+    - {topic=recomendacoes}{@inicio}
+
+    + 7
+    - {topic=quem_doar}{@inicio}
+ 
+    + 8
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
+    ^ {topic=criterios_basicos}{@inicio}
+< topic

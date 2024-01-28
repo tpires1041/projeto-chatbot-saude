@@ -1,0 +1,28 @@
+> topic recomendacoes
+    + inicio
+    - Recomendações para a doação de sangue:\n\n
+    ^ Não ingerir bebida alcoólica pelo menos 12 horas antes da doação (para quem bebe com moderação);\n
+    ^ Não fumar 1 hora antes e após a doação;\n
+    ^ Estar bem alimentado antes e após a doação;\n
+    ^ Evitar alimentos gordurosos no dia anterior á doação;\n
+    ^ Ingerir líquidos em maior quantidade antes e depois da doação;\n
+    ^ Doadores acompanhados de crianças menores de 12 anos não poderão doar sangue, exceto em casos de acompanhamento de companheiros de outro responsavel durante a doação.\n\n
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu de critérios\n
+    ^ 2 - Voltar ao menu principal\n
+    ^ 3 - Finalizar Atendimento
+ 
+    + 1
+    - {topic=criterios_basicos}{@inicio}
+
+    + 2
+    - {topic=boas_vindas}{@inicio}
+
+    + 3
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
+    ^ {topic=recomendacoes}{@inicio}
+< topic

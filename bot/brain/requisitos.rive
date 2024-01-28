@@ -7,21 +7,22 @@
     ^ O limite de idade para a primeira doação é de 60 anos, 11 meses e 29 dias;\n
     ^ Menores entre 16 e 17 anos de idade podem doar com acompanhamento e autorização do responsável legal;\n
     ^ Pesar no mínimo 51 kg.\n\n
-    ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
-    ^ 1 - Intevalo de doações\n
-    ^ 2 - Locais de doações\n
-    ^ 3 - Finalizar
-
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu de critérios\n
+    ^ 2 - Voltar ao menu principal\n
+    ^ 3 - Finalizar Atendimento
+ 
     + 1
-    - {topic=desejo_doar}{@inicio}
+    - {topic=criterios_basicos}{@inicio}
 
     + 2
-    - {topic=locais_doar}{@inicio}
+    - {topic=boas_vindas}{@inicio}
 
     + 3
     - Certo, até a próxima! {topic=random}
 
     + *
-    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
     ^ {topic=requisitos_doar}{@inicio}
 < topic

@@ -1,0 +1,34 @@
+> topic aguardar_apos
+    + inicio
+    - Deve aguardar para doar sangue:\n\n
+    ^ Quem fez tranfusão de sangue | 1 ano\n
+    ^ Tatuagem, maquiagem definitiva, piercing | 1 ano\n
+    ^ Piercing (oral e genital) | 1 ano da retirada\n
+    ^ Quem se submeteu a cirurgias (e parceiro) | Será analisado\n
+    ^ Parto normal | 3 meses\n
+    ^ Amamentação | Parto ocorrido há mais de 1 ano\n
+    ^ Dengue clássica | 1 mês após a cura\n
+    ^ Dengue grave | 6 meses após a cura\n
+    ^ Infecções Sexualmente Transmissíveis-IST | 1 ano após a cura (exceto sífilis)\n
+    ^ Gripe (após o termino dos sintomas) | 2 semanas\n
+    ^ Medicação | Á critério do médico\n
+    ^ Procedimentos endoscópicos (Endoscopia/Colonoscopia) | 6 meses.\n\n
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu de critérios\n
+    ^ 2 - Voltar ao menu principal\n
+    ^ 3 - Finalizar Atendimento
+ 
+    + 1
+    - {topic=criterios_basicos}{@inicio}
+
+    + 2
+    - {topic=boas_vindas}{@inicio}
+
+    + 3
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
+    ^ {topic=aguardar_apos}{@inicio}
+< topic

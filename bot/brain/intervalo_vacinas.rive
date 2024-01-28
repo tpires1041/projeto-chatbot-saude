@@ -1,0 +1,30 @@
+> topic intervalo_vacinas
+    + inicio
+    - Após vacinação deve aguardar:\n\n
+    ^ Antirábica (após a mordeadura) | 1 ano\n
+    ^ Antitetânica / Antirábica | 48 horas\n
+    ^ Rubéola / Sarampo / Varicela / BCG / Febre amarela / Dengue | 1 mês\n
+    ^ Gripe (influenza) / Hepatite A e B / HPV | 48 horas\n
+    ^ Covid-19 Coronavac (Sinovac/Butatan) | 48 hotas\n
+    ^ Covid-19 BNT 162 (BioNTech/Fosun Pharma/Pfizer) | 7 dias\n
+    ^ Covid-19 Covishield (Astrazeneca/Oxford/Fiocruz) | 7 dias\n
+    ^ Covid-19 AD26.Cov2.S (Janssen-Cilag) | 7 dias\n\n
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu de critérios\n
+    ^ 2 - Voltar ao menu principal\n
+    ^ 3 - Finalizar Atendimento
+ 
+    + 1
+    - {topic=criterios_basicos}{@inicio}
+
+    + 2
+    - {topic=boas_vindas}{@inicio}
+
+    + 3
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.
+    ^ {topic=intervalo_vacinas}{@inicio}
+< topic

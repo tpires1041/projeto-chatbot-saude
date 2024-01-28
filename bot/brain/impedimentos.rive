@@ -1,0 +1,28 @@
+> topic impedimentos
+    + inicio
+    - Não pode doar sangue quem:\n\n
+    ^ Quem teve Hepatite após 11 anos de idade;\n
+    ^ Doenças de Chagas, Câncer, Sífilis;\n
+    ^ Pessoas infectadas pelo HIV e seus parceiros;\n
+    ^ Homens e mulheres com parceiro(a) eventual ou múltiplos parceiros sexuais, que mantêm relações com ou sem uso de preservativos;\n
+    ^ Pessoas que compartilham seringas;\n
+    ^ Pessoas que fazem uso de drogas injetáveis ilícitas;\n\n
+    ^ Digite o que deseja fazer.\n
+    ^ Para sua resposta, digite apenas números, cada número representa uma opção de resposta.\n\n
+    ^ 1 - Voltar ao menu de critérios\n
+    ^ 2 - Voltar ao menu principal\n
+    ^ 3 - Finalizar Atendimento
+ 
+    + 1
+    - {topic=criterios_basicos}{@inicio}
+
+    + 2
+    - {topic=boas_vindas}{@inicio}
+
+    + 3
+    - Certo, até a próxima! {topic=random}
+
+    + *
+    - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.\n\n
+    ^ {topic=impedimentos}{@inicio}
+< topic
