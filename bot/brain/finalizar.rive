@@ -1,6 +1,6 @@
 > topic finalizar
   + inicio
-  - Deseja avaliar esse atendimento? É super rápido 😁!\n
+  - Deseja avaliar o <bot nome>? É super rápido!\n
   ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
   ^ 1 - Sim\n
   ^ 2 - Não
@@ -9,5 +9,5 @@
   - {topic=avaliacao}{@inicio}
 
   + 2
-  - Okay, até a próxima {topic=random}
+  - Certo, até a próxima. {topic=random}
 < topic

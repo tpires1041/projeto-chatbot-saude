@@ -1,6 +1,6 @@
 > topic avaliacao
   + inicio
-  - Em uma escala de 0 a 10, sendo 0 "não recomendaria" e 10 "recomendaria", o quanto você recomendaria o nosso atendimento a uma amiga ou familiar? 😄
+  - Em uma escala de 0 a 10, o que achou do atendimentos e as informações disponíveis pelo <bot nome>?
   
   + (0|1|2|3|4|5|6|7|8|9|10)
   - <set nota=<star>> Ok, muito obrigado pela sua avaliação.
@@ -8,5 +8,5 @@
   ^ <call>salvarAvaliacao <get nota></call>
 
   + *
-  - Infelizmente eu não tenho resposta para essa opção. {topic=avaliacao}{@inicio}
+  - Infelizmente eu não tenho resposta para essa opção.\n\n {topic=avaliacao}{@inicio}
 < topic

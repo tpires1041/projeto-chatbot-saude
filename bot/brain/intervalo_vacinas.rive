@@ -22,7 +22,7 @@
     - {topic=boas_vindas}{@inicio}
 
     + 3
-    - Certo, até a próxima! {topic=random}
+    - {topic=finalizar}{@inicio}
 
     + *
     - Infelizmente eu não tenho resposta para essa opção. Escolha uma presente no menu.
