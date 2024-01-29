@@ -1,6 +1,6 @@
 > topic finalizar
   + inicio
-  - Deseja avaliar o <bot nome>? É super rápido!\n
+  - Antes de finalizar, deseja avaliar o <bot nome>? É super rápido!\n
   ^ Para sua resposta, digite apenas números, cada número representa uma respectiva resposta.\n\n
   ^ 1 - Sim\n
   ^ 2 - Não
