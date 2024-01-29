@@ -90,7 +90,7 @@
 //Funções para salvar avaliação
 > object salvarAvaliacao javascript
     if (this.salvarAvaliacao(args)){
-        return "Espero te ver novamente!\n"
+        return " Espero te ver novamente!\n"
     } else {
         return "Erro ao salvar a avaliação\n"
     }
