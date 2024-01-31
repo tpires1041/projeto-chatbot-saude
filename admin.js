@@ -4,8 +4,6 @@ require('dotenv/config');
 const AdminJS = require('adminjs');
 const AdminJSExpress = require('@adminjs/express');
 const AdminJSSequelize = require('@adminjs/sequelize')
-import { ComponentLoader } from 'adminjs'
-const options = require('./config/options.js');
 AdminJS.registerAdapter(AdminJSSequelize);
 const { Usuario } = require('./app/models');
 const bcrypt = require('bcryptjs');
@@ -18,7 +16,13 @@ const Components = {
   // other custom components
 }
 
-const adminJs = new AdminJS(options)
+const admin = new AdminJS({
+  dashboard: {
+    component: Components.Dashboard,
+  },
+  componentLoader
+})
+
 
 if (process.env.NODE_ENV == 'production'){
   module.exports = adminRouter = AdminJSExpress.buildAuthenticatedRouter(adminJs, {
