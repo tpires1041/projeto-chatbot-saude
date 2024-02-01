@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Dashboard () {
   return (
-    <h1>Teste</h1>
+    <div>
+      <h1>Seja Bem Vindo!!!</h1>
+    </div>
+    
   )
 }
