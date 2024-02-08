@@ -1,4 +1,4 @@
-const {Esf, Usuario, Paciente, Informacao, Agendamento, Avaliacao} = require('../app/models');
+const {Esf, Usuario, Paciente, Informacao, Avaliacao} = require('../app/models');
 const translations = require('./translations');
 
 const resources = [
@@ -10,13 +10,13 @@ const resources = [
   },
   { resource: Usuario, 
     options: { 
-      listProperties: ['id', 'name', 'email', 'esfId', 'admin', 'createdAt', 'updatedAt']
+      listProperties: ['id', 'name', 'email', 'tipo', 'admin', 'createdAt', 'updatedAt']
     }
   },
   { resource: Paciente, 
     options: { 
-      showProperties: ['id', 'name', 'contato', 'esfId', 'createdAt', 'updatedAt'],
-      listProperties: ['id', 'name', 'contato', 'esfId', 'createdAt', 'updatedAt']
+      showProperties: ['id', 'name', 'contato', 'tipo', 'createdAt', 'updatedAt'],
+      listProperties: ['id', 'name', 'contato', 'tipo', 'createdAt', 'updatedAt']
     }
   }, 
   { resource: Agendamento, 
